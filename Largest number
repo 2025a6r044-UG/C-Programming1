@@ -1,0 +1,9 @@
+//Program to find largest number among two using ternary operator
+#include<stdio.h>
+int main(){
+    int a,b;
+    printf("Enter the two nummbers:");
+    scanf("%d\n%d",&a,&b);
+    (a>b)?printf("%d is largest",a):printf("%d is largest",b);
+    return 0;
+}

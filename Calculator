@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int e,m,s,c,h,tm;
+    float av,per;
+    scanf("%d%d%d%d%d",&e,&m,&s,&c,&h);
+    tm=e+m+s+c+h;
+    av=tm/5;
+    per=(tm*100)/500;
+    scanf("%d",&tm);
+    scanf("%f",&av);
+    scanf("%f",&per);
+    printf("%d %.2f %.2f",tm,av,per);
+    
+    
+      
+    return 0;
+}

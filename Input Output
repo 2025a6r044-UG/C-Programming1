@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    char ch='A';
+    int a=25;
+    float b=12.5;
+    double d=45.678900;
+    printf("%c %d %.2f %lf",ch,a,b,d);
+    return 0;
+}

@@ -1,0 +1,12 @@
+//WAP to print a multiplication of series i.e,1*2*3.....*N
+#include<stdio.h>
+int main(){
+    int i,m=1,n;
+    printf("Enter number :");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++){
+        m=m*i;
+    }
+    printf("Multiplication=%d\n",m);
+ return 0;   
+}

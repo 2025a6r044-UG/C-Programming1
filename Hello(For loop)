@@ -1,3 +1,4 @@
+//WAP to print a string 'n' times
 #include<stdio.h>
 int main(){
     int i;

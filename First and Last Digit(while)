@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main(){
+    int N,first,last;
+    scanf("%d",&N);
+    if(N>=0 && N<=9)
+        first=last=N;
+    else{
+         last=N%10;
+    N=N/10;
+    while(N!=0){
+        first=N%10;
+        N=N/10;
+    }
+    }
+   printf("%d %d",first,last);   
+    return 0;
+}

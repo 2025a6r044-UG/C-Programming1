@@ -1,4 +1,4 @@
-//WAP to print largest number among N
+//WAP to print largest or maximum number among N
 #include<stdio.h>
 int main(){
     int i,n,num,max=0;

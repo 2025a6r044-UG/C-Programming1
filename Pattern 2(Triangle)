@@ -1,0 +1,21 @@
+//Wap to draw a triangle pattern
+#include<stdio.h>
+int main(){
+    int n;
+    printf("enter n:");
+    scanf("%d",&n);
+      for(int i=1;i<=n;i++){
+          for(int j=1;j<=i;j++){
+              printf("* ");
+        }
+         for(int k=1;k<=(n-i)+(n-i-1);k++){
+            printf("  ");
+        }
+         for(int p=1;p<=i;p++){
+            if(p!=n)
+            printf("* ");
+        }
+printf("\n");
+    }
+    return 0;
+}

@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    float phy,chem,bio,math,com;
+    float sum,per;
+    scanf("%f %f %f %f %f",&phy,&chem,&bio,&math,&com);
+    sum=phy+chem+bio+math+com;
+    per=(sum/500)*100;
+    if(per>=90){
+        printf("Percentage = %.2f\nGrade = A",per);
+    }
+    else if(per>=80 && per<90){
+        printf("Percentage = %.2f\nGrade = B",per);
+    }
+    else if(per>=70 && per<80){
+        printf("Percentage = %.2f\nGrade = C",per);
+    }
+    else if(per>=60 && per<70){
+        printf("Percentage = %.2f\nGrade = D",per);
+    }
+    else if(per>=40 && per<60){
+        printf("Percentage = %.2f\nGrade = E",per);
+    }
+    else if(per<40){
+        printf("Percentage = %.2f\nGrade = F",per);
+    }
+
+    return 0;
+}

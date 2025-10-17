@@ -1,0 +1,26 @@
+//Simple calculator to do normal arithematic operations
+#include<stdio.h>
+int main(){
+    float num1,num2;
+    int choice;
+    printf("Enter number:");
+    scanf("%f %f",&num1,&num2);
+    printf("Select arithmetic operator\n1 +\n2 -\n3 *\n4 /\n");
+    scanf("%d",&choice);
+    if(choice==1){
+        printf("%f",num1+num2);
+    }
+    else if(choice==2){
+        printf("%f",num1-num2);
+    }
+    else if(choice==3){
+        printf("%f",num1*num2);
+    }
+    else if(choice==4){
+        printf("%f",num1/num2);
+    }
+    else{
+        printf("Invalid symbol selected");
+    }
+    return 0;
+}

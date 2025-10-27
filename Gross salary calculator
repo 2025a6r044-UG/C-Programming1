@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int ba;
+    float hra,da,sal;
+    scanf("%d",&ba);
+    if(ba<=10000){
+        hra=(20*ba)/100;
+        da=(30*ba)/100;
+        sal=ba+hra+da;
+        printf("%.2f",sal);
+    }
+    else if(ba<=20000){
+            hra=(25*ba)/100;
+            da=(40*ba)/100;
+            sal=ba+hra+da;
+            printf("%.2f",sal);
+    }
+    else if(ba>20000){
+            hra=(30*ba)/100;
+            da=(50*ba)/100;
+            sal=ba+hra+da;
+            printf("%.2f",sal);
+    }
+    return 0;
+}

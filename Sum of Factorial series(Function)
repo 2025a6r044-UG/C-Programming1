@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int isFact(int num){
+    int fact=1;
+    for(int i=1;i<=num;i++){
+        fact*=i;
+    }
+    return fact;
+}
+int main() {
+    int n,sum=0;
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++){
+        isFact(i);
+        sum+=isFact(i);
+    }
+    printf("%d",sum);
+    return 0;
+}
